@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="家樂福線上購物網">
+    <meta property="og:title" content="家樂福線上購物APP開放下載囉!!">
+    <meta property="og:description" content="下載加入會員馬上享有100元折扣代碼。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://online.carrefour.com.tw/Events-old/appdownload/index.html">
+    <meta property="og:image" content="http://online.carrefour.com.tw/Events-old/appdownload/img/fb-share.jpg">
+    <title>家樂福線上購物網</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- 判斷 iOS / Android -->
+    <script>
+    (function() {
+
+        var fallbackLink = 'index.html' + window.location.search + window.location.hash;
+
+        var isiOS = navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone') || navigator.userAgent.match('iPod');
+
+        var isAndroid = navigator.userAgent.match('Android');
+
+        if (isiOS || isAndroid) {
+
+            fallbackLink = isAndroid ? 'https://play.google.com/store/apps/details?id=com.carrefour.shoppingapp' : 'https://itunes.apple.com/tw/app/%E5%AE%B6%E6%A8%82%E7%A6%8F%E7%B6%B2%E8%B3%BC%E5%95%86%E5%9F%8E/id1195740452?mt=8';
+            window.setTsimeout(function() {
+                window.location.replace(fallbackLink);
+            }, 500);
+        }
+    })();
+    </script>
+</head>
+
+<body>
+
+<div class="worn">
+<img src="img/carrefour app icon.png" alt="" class="img-responsive">
+請使用手機下載家樂福線上購物APP，【800免運，24小時候到貨】
+<br/><a href="https://online.carrefour.com.tw/">前往家樂福線上購物</a></div>
+</body>
+
+</html>
